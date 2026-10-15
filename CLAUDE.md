@@ -20,7 +20,6 @@ A personal fork of [pierpaolo28/Awesome-FDE-Roadmap](https://github.com/pierpaol
 | `STUDY-PLAN.md` | 4-week personal study plan | Yes |
 | `CONTRIBUTING.md`, `LICENSE` | Upstream editorial rules and MIT license | No (upstream files) |
 | `.claude/skills/sync-upstream/` | Procedure for merging upstream and porting changes to `README-AWS.md` | Yes |
-| `.info/` | Local-only personal documents (resume, etc.) | Never commit. See Privacy |
 
 To pull in upstream changes, use the `sync-upstream` skill. It tracks the last synced upstream commit in the `Synced with upstream:` line at the top of `README-AWS.md`; update it whenever you sync.
 
@@ -54,8 +53,8 @@ The document is organized as numbered top-level `##` sections mirrored by the Ta
 
 ## Privacy
 
-- Personal documents (resume, career history) live in `.info/` and must never be committed or pushed, and their content must not be copied into any tracked file (no name, employer, or contact details). Describe skills and experience generically.
-- `.info/` must stay listed in `.gitignore`. If it is missing, add it before doing anything else.
+- Personal documents (resume, career history, etc.) are not stored in this repository. If the user shares one in a session, use it for the conversation only; don't copy its content into any tracked file (no name, employer, or contact details). Describe skills and experience generically.
+- `.gitignore` keeps `.info/` listed as a safety net in case a personal document is placed there again. Never remove that entry, and never commit anything under it.
 
 ## Git
 
